@@ -1,0 +1,142 @@
+.courses {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.courses .cards {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.cards .mainBox{
+    width: 80%;
+    height: 200px;
+    position: relative;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 300ms ease;
+}
+.mainBox:hover{
+    box-shadow: none;
+    border: .2px solid #333;
+}
+.cards .others{
+    width: 80%;
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+
+}
+.mainBox  .imgBox{
+    width: 450px;
+    background-color: #ffa31a;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgBox img{
+    width: 200px;
+}
+.mainBox .contentSide{
+    width: 100%;
+    padding: 0 20px;
+}
+.contentSide button{
+    padding: 10px 10px;
+    margin: 5px;
+    background: none;
+    border: 1px solid ;
+    border-radius: 10px;
+    background: #ffa31a;
+    color: #fff;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.others .box{
+    width: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.box .imgBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 100ms ease;
+}
+.box h3{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    transition: all 300ms ease;
+}
+.box button{
+    position: absolute;
+    right: 20px;
+    bottom: -25px;
+    padding: 3px 10px;
+    background-color: #ffa31a;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.box:hover button{
+    bottom: 32px;
+    opacity: 1;
+}
+.box:hover h3{
+    left: 20px;
+    color: #fff;
+    transform: translateX(0);
+}
+.box:nth-child(1):hover .imgBox{
+    background-color: #9360ff;
+    color: #fff;
+}
+.box:nth-child(2):hover .imgBox{
+    background-color: #D80032;
+    color: #fff;
+}
+.box:nth-child(3):hover .imgBox{
+    background-color: #068DA9;
+    color: #fff;
+}
+.box:nth-child(4):hover .imgBox{
+    background-color: #1A5D1A;
+    color: #fff;
+}
+.box:nth-child(5):hover .imgBox{
+    background-color: #98D8AA;
+    color: #fff;
+}
